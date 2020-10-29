@@ -1,0 +1,155 @@
+	body {
+		width: 1270px;
+		margin: 0 auto;
+		/*outline: 1px solid red;*/
+	}
+	.switchPiano {
+		background: rgb(168, 70, 70);
+		color: white;
+	}
+	#piano	{
+		margin: 0 auto;
+		width: 1220px;
+		/*outline: 1px solid green;*/
+		position: relative;
+	}
+	#piano img {
+		width: 1220px;
+	}
+	#wrapper {
+		/*width: 462px;*/  /* 160 + 2x8 | octawa [140+2x7=154]x3=462   */ 
+		overflow: hidden;
+		height: 137px;
+		/*border: 1px solid black;*/
+		position: absolute;
+		/*outline: 1px solid blue;*/
+		top: 190px;left: 48px;
+	}
+	/* białe klawisze */
+	#o0a, #o0h,
+	#o1c, #o1d, #o1e, #o1f, #o1g, #o1a, #o1h,
+	#o2c, #o2d, #o2e, #o2f, #o2g, #o2a, #o2h,
+	#o3c, #o3d, #o3e, #o3f, #o3g, #o3a, #o3h,
+	#o4c, #o4d, #o4e, #o4f, #o4g, #o4a, #o4h,
+	#o5c, #o5d, #o5e, #o5f, #o5g, #o5a, #o5h,
+	#o6c, #o6d, #o6e, #o6f, #o6g, #o6a, #o6h,
+	#o7c, #o7d, #o7e, #o7f, #o7g, #o7a, #o7h
+	{
+		border: 1px solid #808080;
+		width: 20px;
+		height: 135px;
+		float:left;
+		background-color: white;
+	}
+	/* czarne klawisze */
+	#o0am,
+	#o1cm, #o1dm, #o1fm, #o1gm, #o1am,
+	#o2cm, #o2dm, #o2fm, #o2gm, #o2am,
+	#o3cm, #o3dm, #o3fm, #o3gm, #o3am,
+	#o4cm, #o4dm, #o4fm, #o4gm, #o4am,
+	#o5cm, #o5dm, #o5fm, #o5gm, #o5am,
+	#o6cm, #o6dm, #o6fm, #o6gm, #o6am,
+	#o7cm, #o7dm, #o7fm, #o7gm, #o7am
+	{
+		width: 18px;height: 90px;top: 1px;
+		position: absolute;
+		/*background-color: #555;*/
+		background-image: url('img/czarny2.jpg');
+	}
+	#o0am {left: 13px;}
+
+	#o1cm {left: 57px;}
+	#o1dm {left: 79px;}
+	#o1fm {left: 123px;}
+	#o1gm {left: 145px;}
+	#o1am {left: 167px;}
+
+	#o2cm {left: 211px;}
+	#o2dm {left: 233px;}
+	#o2fm {left: 277px;}
+	#o2gm {left: 299px;}
+	#o2am {left: 321px;}
+
+	#o3cm {left: 365px;}
+	#o3dm {left: 387px;}
+	#o3fm {left: 431px;}
+	#o3gm {left: 453px;}
+	#o3am {left: 475px;}		
+
+	#o4cm {left: 519px;}
+	#o4dm {left: 541px;}
+	#o4fm {left: 585px;}
+	#o4gm {left: 607px;}
+	#o4am {left: 629px;}
+
+	#o5cm {left: 673px;}
+	#o5dm {left: 695px;}
+	#o5fm {left: 739px;}
+	#o5gm {left: 761px;}
+	#o5am {left: 783px;}
+
+	#o6cm {left: 827px;}
+	#o6dm {left: 849px;}
+	#o6fm {left: 893px;}
+	#o6gm {left: 915px;}
+	#o6am {left: 937px;}
+
+	#o7cm {left: 981px;}
+	#o7dm {left: 1003px;}
+	#o7fm {left: 1047px;}
+	#o7gm {left: 1069px;}
+	#o7am {left: 1091px;}		
+
+	/* białe klawisze - hover */
+	#o0a:hover, #o0h:hover,
+	#o1c:hover, #o1d:hover, #o1e:hover, #o1f:hover, #o1g:hover, #o1a:hover, #o1h:hover,
+	#o2c:hover, #o2d:hover, #o2e:hover, #o2f:hover, #o2g:hover, #o2a:hover, #o2h:hover, 
+	#o3c:hover, #o3d:hover, #o3e:hover, #o3f:hover, #o3g:hover, #o3a:hover, #o3h:hover,
+	#o4c:hover, #o4d:hover, #o4e:hover, #o4f:hover, #o4g:hover, #o4a:hover, #o4h:hover,
+	#o5c:hover, #o5d:hover, #o5e:hover, #o5f:hover, #o5g:hover, #o5a:hover, #o5h:hover,
+	#o6c:hover, #o6d:hover, #o6e:hover, #o6f:hover, #o6g:hover, #o6a:hover, #o6h:hover,
+	#o7c:hover, #o7d:hover, #o7e:hover, #o7f:hover, #o7g:hover, #o7a:hover, #o7h:hover
+	{
+		background-color: #fafafa;
+		cursor: pointer;
+	}
+	/* czarne klawisze */
+	#o0am:hover,
+	#o1cm:hover, #o1dm:hover, #o1fm:hover, #o1gm:hover, #o1am:hover, 
+	#o2cm:hover, #o2dm:hover, #o2fm:hover, #o2gm:hover, #o2am:hover,
+	#o3cm:hover, #o3dm:hover, #o3fm:hover, #o3gm:hover, #o3am:hover,
+	#o4cm:hover, #o4dm:hover, #o4fm:hover, #o4gm:hover, #o4am:hover,
+	#o5cm:hover, #o5dm:hover, #o5fm:hover, #o5gm:hover, #o5am:hover,
+	#o6cm:hover, #o6dm:hover, #o6fm:hover, #o6gm:hover, #o6am:hover,
+	#o7cm:hover, #o7dm:hover, #o7fm:hover, #o7gm:hover, #o7am:hover
+	{
+		background-color: #505050;
+		cursor: pointer;
+	}
+	/* białe klawisze - active */
+	#o0a:active, #o0h:active,
+	#o1c:active, #o1d:active, #o1e:active, #o1f:active, #o1g:active, #o1a:active, #o1h:active,
+	#o2c:active, #o2d:active, #o2e:active, #o2f:active, #o2g:active, #o2a:active, #o2h:active,
+	#o3c:active, #o3d:active, #o3e:active, #o3f:active, #o3g:active, #o3a:active, #o3h:active,
+	#o4c:active, #o4d:active, #o4e:active, #o4f:active, #o4g:active, #o4a:active, #o4h:active,
+	#o5c:active, #o5d:active, #o5e:active, #o5f:active, #o5g:active, #o5a:active, #o5h:active,
+	#o6c:active, #o6d:active, #o6e:active, #o6f:active, #o6g:active, #o6a:active, #o6h:active,
+	#o7c:active, #o7d:active, #o7e:active, #o7f:active, #o7g:active, #o7a:active, #o7h:active	
+	{
+		background-color: #ddd;
+		background: linear-gradient(#fff,#ccc);
+	}
+	/* czarne klawisze */
+	#o0am:active,
+	#o1cm:active, #o1dm:active, #o1fm:active, #o1gm:active, #o1am:active, 
+	#o2cm:active, #o2dm:active, #o2fm:active, #o2gm:active, #o2am:active,
+	#o3cm:active, #o3dm:active, #o3fm:active, #o3gm:active, #o3am:active,
+	#o4cm:active, #o4dm:active, #o4fm:active, #o4gm:active, #o4am:active,
+	#o5cm:active, #o5dm:active, #o5fm:active, #o5gm:active, #o5am:active,
+	#o6cm:active, #o6dm:active, #o6fm:active, #o6gm:active, #o6am:active,
+	#o7cm:active, #o7dm:active, #o7fm:active, #o7gm:active, #o7am:active
+	{
+		/*background-color: #333;*/
+		background-image: url('img/czarny_press2.jpg');
+		height: 90px;
+	}
