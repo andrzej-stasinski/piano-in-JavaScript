@@ -11,8 +11,8 @@
 * app made in HTML, CSS, JavaScript
 * swapping the styles files css
 
-
-
+#### You can play the piano
+* <a href='https://andrzej-stasinski.github.io/piano-in-JavaScript/'>play the piano</a>
 
 
 
